@@ -15,7 +15,7 @@
 		<ApplicationTitle>Automate</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.automate</ApplicationId>
+		<ApplicationId>com.swara.automate</ApplicationId>
 		<ApplicationIdGuid>fe111ff6-2d92-47f0-8ec8-ba834e30e21d</ApplicationIdGuid>
 
 		<!-- Versions -->
