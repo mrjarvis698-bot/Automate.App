@@ -50,6 +50,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Platforms\Android\Resources\drawable\maui_splash.xml" />
 	  <None Remove="Platforms\Android\Resources\values-night\colors.xml" />
 	  <None Remove="Platforms\Android\Resources\values-night\styles.xml" />
 	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
