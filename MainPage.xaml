@@ -19,18 +19,8 @@
                 HorizontalOptions="Center">
 
                 <Button
-                    x:Name="login_btn"
-                    Text="Login"
-                    HorizontalOptions="Center" />
-                <Label
-                    Text=" / "
-                    SemanticProperties.HeadingLevel="Level2"
-                    FontSize="35"
-                    HorizontalOptions="Center" />
-                
-                <Button
-                    x:Name="register_btn"
-                    Text="Register"
+                    x:Name="get_start"
+                    Text="Get Started"
                     HorizontalOptions="Center" />
             </HorizontalStackLayout>
 
