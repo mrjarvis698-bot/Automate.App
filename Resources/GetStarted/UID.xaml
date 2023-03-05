@@ -12,12 +12,24 @@
             HeightRequest="500"
             WidthRequest="500"
             HorizontalOptions="Center" />
-        <VerticalStackLayout VerticalOptions="Center">
+        <VerticalStackLayout 
+            Spacing="25"
+            VerticalOptions="Center">
             <Label 
                 Text="UID Verification."
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
-                FontSize="50"/>            
+                FontSize="50"/>
+            <Entry x:Name="entry"
+               Placeholder="Enter UID" />
+            
+            <HorizontalStackLayout
+                HorizontalOptions="End">
+                <Button
+                    x:Name="submit_UID"
+                    Text="Get Started"
+                    VerticalOptions="End" />
+            </HorizontalStackLayout>
         </VerticalStackLayout>
         
     </HorizontalStackLayout>
