@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Automate.Resources.GetStarted.UID"
-             Shell.FlyoutBehavior="Disabled"
+             x:Class="Automate.Resources.Buy.Buy_UID"
              xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI">
     <HorizontalStackLayout 
         HorizontalOptions="Center">
         <skia:SKLottieView
-            Source="UID.json"
+            Source="CPU_info.json"
             RepeatCount="-1"
             HeightRequest="500"
             WidthRequest="500"
@@ -16,30 +15,16 @@
             Spacing="25"
             VerticalOptions="Center">
             <Label 
-                Text="UID Verification."
+                Text="CPU Info."
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
                 FontSize="50"/>
-            <Entry x:Name="UID_entry"
-               Placeholder="Enter UID"
-               ClearButtonVisibility="WhileEditing"/>
 
             <HorizontalStackLayout
                 HorizontalOptions="End">
                 <Button
-                    x:Name="submit_UID"
-                    Text="Verify"
-                    Clicked="UID_Submit_Clicked"
-                    VerticalOptions="End" />
-                <Label 
-                    Text="/"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Center"
-                    FontSize="20"/>
-                <Button
-                    x:Name="buy_UID"
-                    Text="Buy"
-                    Clicked="Buy_UID_Clicked"
+                    x:Name="View_PC_Properties"
+                    Text="Register UID"
                     VerticalOptions="End" />
             </HorizontalStackLayout>
         </VerticalStackLayout>

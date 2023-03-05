@@ -54,6 +54,7 @@
 	  <None Remove="Platforms\Android\Resources\values-night\colors.xml" />
 	  <None Remove="Platforms\Android\Resources\values-night\styles.xml" />
 	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
+	  <None Remove="Resources\Raw\CPU_info.json" />
 	  <None Remove="Resources\Raw\UID.json" />
 	</ItemGroup>
 
@@ -69,6 +70,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Resources\Buy\Buy_UID.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Resources\GetStarted\UID.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

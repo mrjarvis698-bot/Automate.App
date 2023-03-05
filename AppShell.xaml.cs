@@ -1,4 +1,5 @@
-﻿using Automate.Resources.GetStarted;
+﻿using Automate.Resources.Buy;
+using Automate.Resources.GetStarted;
 
 namespace Automate;
 
@@ -8,5 +9,6 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
         Routing.RegisterRoute("fetch_UID", typeof(UID));
+        Routing.RegisterRoute("Buy_UID", typeof(Buy_UID));
     }
 }

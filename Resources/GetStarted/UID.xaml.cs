@@ -14,4 +14,8 @@ public partial class UID : ContentPage
     {
         var UID = UID_entry.Text;
     }
+    private async void Buy_UID_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("Buy_UID");
+    }
 }
