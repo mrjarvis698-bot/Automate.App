@@ -20,14 +20,16 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
                 FontSize="50"/>
-            <Entry x:Name="entry"
-               Placeholder="Enter UID" />
-            
+            <Entry x:Name="UID_entry"
+               Placeholder="Enter UID"
+               ClearButtonVisibility="WhileEditing"/>
+
             <HorizontalStackLayout
                 HorizontalOptions="End">
                 <Button
                     x:Name="submit_UID"
-                    Text="Get Started"
+                    Text="Verify"
+                    Clicked="UID_Submit_Clicked"
                     VerticalOptions="End" />
             </HorizontalStackLayout>
         </VerticalStackLayout>

@@ -1,3 +1,5 @@
+using System.Xml.Linq;
+
 namespace Automate.Resources.GetStarted;
 
 public partial class UID : ContentPage
@@ -6,5 +8,10 @@ public partial class UID : ContentPage
 	{
 		InitializeComponent();
         NavigationPage.SetHasNavigationBar(this, false);
+    }
+
+    private void UID_Submit_Clicked(object sender, EventArgs e)
+    {
+        var UID = UID_entry.Text;
     }
 }
