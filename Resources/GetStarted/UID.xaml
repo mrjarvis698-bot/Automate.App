@@ -2,11 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Automate.Resources.GetStarted.UID"
-             Shell.FlyoutBehavior="Disabled">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
+             Shell.FlyoutBehavior="Disabled"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI">
+    <HorizontalStackLayout 
+        HorizontalOptions="Center">
+        <skia:SKLottieView
+            Source="UID.json"
+            RepeatCount="-1"
+            HeightRequest="500"
+            WidthRequest="500"
             HorizontalOptions="Center" />
-    </VerticalStackLayout>
+        <VerticalStackLayout VerticalOptions="Center">
+            <Label 
+                Text="UID Verification."
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="50"/>            
+        </VerticalStackLayout>
+        
+    </HorizontalStackLayout>
 </ContentPage>

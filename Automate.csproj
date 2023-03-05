@@ -54,6 +54,7 @@
 	  <None Remove="Platforms\Android\Resources\values-night\colors.xml" />
 	  <None Remove="Platforms\Android\Resources\values-night\styles.xml" />
 	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
+	  <None Remove="Resources\Raw\UID.json" />
 	</ItemGroup>
 
 	<ItemGroup>
