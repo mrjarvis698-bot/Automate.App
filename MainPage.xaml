@@ -21,7 +21,8 @@
                 <Button
                     x:Name="get_start"
                     Text="Get Started"
-                    HorizontalOptions="Center" />
+                    HorizontalOptions="Center"
+                    Clicked="OnGetStartedClicked" />
             </HorizontalStackLayout>
 
         </VerticalStackLayout>

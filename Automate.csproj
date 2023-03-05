@@ -61,4 +61,16 @@
 		<PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="Resources\GetStarted\UID.xaml.cs">
+	    <DependentUpon>UID.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Resources\GetStarted\UID.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>

@@ -6,5 +6,9 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void OnGetStartedClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("fetch_UID");
+    }
 }
 
