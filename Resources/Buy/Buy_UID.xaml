@@ -19,13 +19,40 @@
                 VerticalOptions="Center" 
                 HorizontalOptions="Center"
                 FontSize="50"/>
-
+            <HorizontalStackLayout
+                HorizontalOptions="Start">
+                <Label 
+                    Text="CPU ID : "
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+                <Label 
+                    x:Name="CPU_prop"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout
+                HorizontalOptions="Start">
+                <Label 
+                    Text="Board ID :"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+                <Label 
+                    x:Name="Board_prop"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+            </HorizontalStackLayout>
+            
             <HorizontalStackLayout
                 HorizontalOptions="End">
                 <Button
-                    x:Name="View_PC_Properties"
+                    x:Name="register_UID"
                     Text="Register UID"
-                    VerticalOptions="End" />
+                    VerticalOptions="End"
+                    Clicked="btn_click"/>
             </HorizontalStackLayout>
         </VerticalStackLayout>
 
