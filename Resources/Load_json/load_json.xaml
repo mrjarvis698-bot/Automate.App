@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Automate.Resources.Load_json.load_json"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI">
+    <HorizontalStackLayout 
+        HorizontalOptions="Center">
+        <skia:SKLottieView
+            Source="load_file.json"
+            RepeatCount="-1"
+            HeightRequest="500"
+            WidthRequest="500"
+            HorizontalOptions="Center" />
+        <VerticalStackLayout 
+            Spacing="25"
+            VerticalOptions="Center">
+            <Label 
+                Text="Load Project URL"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                FontSize="50"/>
+            <Entry x:Name="json_url"
+                Placeholder="Enter URL"
+                ClearButtonVisibility="WhileEditing"/>
+            <HorizontalStackLayout
+                HorizontalOptions="End">
+                <Label 
+                    x:Name="status_label"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"
+                    FontSize="20"/>
+                <Button
+                    x:Name="fetch_Project"
+                    Text="Fetch Project"
+                    VerticalOptions="End"
+                    Clicked="FetchJsonButton_Clicked2"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+    </HorizontalStackLayout>
+</ContentPage>

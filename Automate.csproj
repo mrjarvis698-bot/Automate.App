@@ -55,6 +55,7 @@
 	  <None Remove="Platforms\Android\Resources\values-night\styles.xml" />
 	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
 	  <None Remove="Resources\Raw\CPU_info.json" />
+	  <None Remove="Resources\Raw\load_file.json" />
 	  <None Remove="Resources\Raw\UID.json" />
 	</ItemGroup>
 
@@ -75,6 +76,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\GetStarted\UID.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Load_json\load_json.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

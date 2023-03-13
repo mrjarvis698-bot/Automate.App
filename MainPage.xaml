@@ -19,10 +19,16 @@
                 HorizontalOptions="Center">
 
                 <Button
-                    x:Name="get_start"
+                    x:Name="get_start"  
                     Text="Get Started"
                     HorizontalOptions="Center"
                     Clicked="OnGetStartedClicked" />
+                
+                <Button
+                    x:Name="bypass"
+                    Text="Bypass"
+                    HorizontalOptions="Center"
+                    Clicked="OnBypassClicked" />
             </HorizontalStackLayout>
 
         </VerticalStackLayout>

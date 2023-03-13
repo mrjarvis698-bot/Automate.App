@@ -1,4 +1,3 @@
-using Microsoft.UI.Xaml.Controls;
 using System.Management;
 namespace Automate.Resources.Buy;
 
